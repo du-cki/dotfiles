@@ -1,1 +1,64 @@
-/home/faaz/Projects/dotfiles/.initrc
+#!/bin/bash
+
+# some useful aliases/shorthands.
+alias poetry="PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring python3.11 -m poetry"
+alias doom="~/.emacs.d/bin/doom" # https://github.com/doomemacs/doomemacs
+alias ws="websocat" # https://github.com/vi/websocat 
+alias shuttle="cargo shuttle" # https://shuttle.rs
+alias bat="bat --style plain" # https://github.com/sharkdp/bat
+alias pnpx="pnpm dlx"
+
+alias la="ls -al"
+alias so="source ~/.zshrc"
+
+alias ff="fastfetch"
+alias neofetch="fastfetch"
+
+alias yt_dlp="python3.11 -m yt_dlp"
+alias sqlite3="sqlite3 -box"
+alias open="xdg-open"
+
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
+
+if [ -x "$(which nvim)" ]
+then
+    # So I don't accidentally open vim, old habits.
+    alias vim="nvim" 
+    export VISUAL=$(which nvim);
+else
+    export VISUAL=$(which vim);
+fi
+
+export EDITOR="$VISUAL";
+
+function help() {
+    "$@" --help 2>&1 | bat --plain --language=help
+}
+
+function webm2mp4() {
+    INPUT_FILE=$1
+
+    if [ -z "$2" ]; 
+    then
+        OUTPUT_FILENAME="${INPUT_FILE%.*}.mp4"
+    else
+        OUTPUT_FILENAME="$2"
+    fi
+
+    ffmpeg -i $INPUT_FILE -c:v libx264 -strict 2 $OUTPUT_FILENAME
+}
+
+function download() {
+    if [ -z "$1" ]; then
+        echo "Error: URL is required" >&2
+        return 1
+    fi
+
+    output_filename="%(id)s.%(ext)s"
+    if [ -z "$2" ]; then
+        output_filename="$2"
+    fi
+
+    python3.11 -m yt_dlp $1 -o $output_filename -S vcodec:h264,ext:mp4 -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]"
+}
