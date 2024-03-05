@@ -1,0 +1,38 @@
+{
+  "workbench.colorTheme": "Dark Horizon",
+  "editor.formatOnSave": true,
+  "gitlens.hovers.currentLine.over": "line",
+  "explorer.confirmDelete": false,
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  "vscord.behaviour.suppressNotifications": true,
+  "window.titleBarStyle": "custom",
+  "codeium.enableConfig": {
+    "*": true,
+    "prisma": true,
+    "markdown": true
+  },
+  "files.associations": {
+    "*.ts": "typescript"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
