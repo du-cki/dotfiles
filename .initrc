@@ -48,7 +48,7 @@ function webm2mp4() {
         OUTPUT_FILENAME="$2"
     fi
 
-    ffmpeg -i $INPUT_FILE -c:v libx264 -strict 2 $OUTPUT_FILENAME
+    ffmpeg -fflags +genpts -i $INPUT_FILE -r 24 $OUTPUT_FILENAME
 }
 
 function download() {
