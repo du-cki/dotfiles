@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # some useful aliases/shorthands.
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 alias poetry="PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring python3.11 -m poetry"
 alias doom="~/.emacs.d/bin/doom" # https://github.com/doomemacs/doomemacs
 alias ws="websocat" # https://github.com/vi/websocat 
