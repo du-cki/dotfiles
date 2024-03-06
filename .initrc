@@ -20,6 +20,8 @@ alias yt_dlp="python3.11 -m yt_dlp"
 alias sqlite3="sqlite3 -box"
 alias open="xdg-open"
 
+alias ip="curl https://api.ipify.org/"
+
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
 
