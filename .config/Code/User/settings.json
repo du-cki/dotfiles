@@ -34,5 +34,7 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "application.shellEnvironmentResolutionTimeout": 20,
+  "vscord.status.idle.check": false
 }
