@@ -25,8 +25,8 @@ vim.opt.whichwrap:append {
 }
 
 -- Due to a bug in the GNOME DE, this is really buggy. Haven't got a solution
--- yet, so I'm displaying it for gnome DE. It'll still be enabled for cases
--- like SSH though. https://github.com/neovim/neovim/issues/9806
+-- yet, so I'm enabling it on gnome desktops; It'll still be disabled elsewhere for cases
+-- like SSH. https://github.com/neovim/neovim/issues/9806
 if os.getenv("DESKTOP_SESSION") ~= "gnome" then
     vim.g.netrw_browse_split = 0
     vim.g.netrw_banner = 0
