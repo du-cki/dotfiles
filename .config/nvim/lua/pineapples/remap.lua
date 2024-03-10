@@ -11,6 +11,12 @@ vim.keymap.set("n", "<Space>so", ":so<CR>:PackerSync<CR>")
 
 vim.keymap.set("n", "<C-_>", "u")
 
+-- Additional Window utility
+vim.keymap.set("n", "<leader>sv", "<C-w>v") -- split vertically
+vim.keymap.set("n", "<leader>sh", "<C-w>s") -- split horizontally
+
+vim.keymap.set("n", "<leader>sd", "<C-w>c") -- close split window
+
 -- moves selected line (in visual mode) up or down (and format it)
 vim.keymap.set("v", "<M-Up>", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "<M-Down>", ":m '>+1<CR>gv=gv")
