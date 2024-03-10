@@ -11,6 +11,7 @@ alias bat="bat --style plain" # https://github.com/sharkdp/bat
 alias pnpx="pnpm dlx"
 
 alias la="ls -al"
+alias ldot="ls -ld ./.*"
 alias so="source ~/.zshrc"
 
 alias ff="fastfetch"
