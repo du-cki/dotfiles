@@ -7,7 +7,7 @@ alias poetry="PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring python3.11 -m
 alias doom="~/.emacs.d/bin/doom" # https://github.com/doomemacs/doomemacs
 alias ws="websocat" # https://github.com/vi/websocat 
 alias shuttle="cargo shuttle" # https://shuttle.rs
-alias bat="bat --style plain" # https://github.com/sharkdp/bat
+alias cat="bat -P --style plain" # https://github.com/sharkdp/bat
 alias pnpx="pnpm dlx"
 
 alias la="ls -al"
@@ -25,6 +25,11 @@ alias ip="curl https://api.ipify.org/"
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
+
+if [ "$TERM" = "xterm-kitty" ]
+then
+    alias ssh="kitten ssh";
+fi
 
 if [ -x "$(which nvim)" ]
 then
