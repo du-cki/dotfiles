@@ -48,3 +48,8 @@ esac
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 # bun end
+
+export PATH=$PATH:"$HOME/.spicetify"
+export PATH="$PATH:/usr/local/go/bin"
+
+eval "$(starship init zsh)"
