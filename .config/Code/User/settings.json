@@ -1,18 +1,28 @@
 {
-  "workbench.colorTheme": "Dark Horizon",
   "editor.formatOnSave": true,
-  "gitlens.hovers.currentLine.over": "line",
-  "explorer.confirmDelete": false,
+  "eslint.format.enable": true,
+  "editor.minimap.enabled": false,
+  "editor.find.seedSearchStringFromSelection": "never",
+  "editor.lineNumbers": "relative",
+  "editor.lightbulb.enabled": "off",
+  "editor.fontFamily": "'Fira Code', 'monospace', monospace",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
-  "editor.minimap.enabled": false,
-  "editor.lineNumbers": "relative",
+  "workbench.iconTheme": "vscode-icons",
+  "vim.useSystemClipboard": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "explorer.confirmDelete": false,
+  "codeium.enableCodeLens": false,
+  "gitlens.hovers.currentLine.over": "line",
   "vscord.behaviour.suppressNotifications": true,
   "window.titleBarStyle": "custom",
   "codeium.enableConfig": {
     "*": true,
     "prisma": true,
-    "markdown": true
+    "markdown": true,
+    "python": false
   },
   "files.associations": {
     "*.ts": "typescript"
@@ -21,7 +31,7 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -49,6 +59,5 @@
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
-  "codeium.enableCodeLens": false,
-  "workbench.iconTheme": "vscode-icons"
+  "workbench.colorTheme": "Transparent Color Theme"
 }

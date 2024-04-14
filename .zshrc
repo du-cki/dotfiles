@@ -19,6 +19,7 @@ plugins=(
     dnf
     ipfs
     jsontools
+    virtualenv
     nvm
     poetry
     python
