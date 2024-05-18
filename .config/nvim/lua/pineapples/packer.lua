@@ -14,5 +14,6 @@ return require('packer').startup(function(use)
   -- themes
   use('rose-pine/neovim')
   use('akinsho/horizon.nvim')
+  use('rebelot/kanagawa.nvim')
 end)
 
