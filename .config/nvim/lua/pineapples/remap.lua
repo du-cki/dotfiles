@@ -4,6 +4,7 @@ vim.g.mapleader = " "
 local km = vim.keymap
 
 km.set("n", "<leader>fd", vim.cmd.Ex)
+km.set("n", "<leader>fp", function() vim.cmd.Ex('~/.config/nvim') end)
 
 km.set("n", "<A-w>", "yy")
 km.set({"x", "o"}, "<A-w>", "y")

@@ -18,11 +18,11 @@
   "gitlens.hovers.currentLine.over": "line",
   "vscord.behaviour.suppressNotifications": true,
   "window.titleBarStyle": "custom",
+  "application.shellEnvironmentResolutionTimeout": 20,
   "codeium.enableConfig": {
     "*": true,
     "prisma": true,
-    "markdown": true,
-    "python": false
+    "markdown": true
   },
   "files.associations": {
     "*.ts": "typescript"
@@ -45,7 +45,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "application.shellEnvironmentResolutionTimeout": 20,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -59,5 +58,6 @@
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
-  "workbench.colorTheme": "Transparent Color Theme"
+  "workbench.colorTheme": "Dark Horizon",
+  "window.customTitleBarVisibility": "auto"
 }

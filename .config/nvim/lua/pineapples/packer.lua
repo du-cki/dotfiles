@@ -10,5 +10,9 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
 
   use('Eandrju/cellular-automaton.nvim')
+
+  -- themes
+  use('rose-pine/neovim')
+  use('akinsho/horizon.nvim')
 end)
 
