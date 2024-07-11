@@ -10,6 +10,7 @@
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "vscode-icons",
   "vim.useSystemClipboard": true,
+  "python.REPL.enableREPLSmartSend": false,
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
@@ -60,5 +61,9 @@
   },
   "workbench.colorTheme": "Dark Horizon",
   "window.customTitleBarVisibility": "auto",
-  "prisma.showPrismaDataPlatformNotification": false
+  "prisma.showPrismaDataPlatformNotification": false,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+  "terminal.integrated.mouseWheelZoom": true,
+  "scm.experimental.showHistoryGraph": true
 }
