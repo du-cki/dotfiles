@@ -16,6 +16,7 @@ alias so="source ~/.zshrc"
 
 alias ff="fastfetch"
 alias neofetch="fastfetch"
+alias uptime="uptime -p"
 
 alias yt_dlp="python3.11 -m yt_dlp"
 alias sqlite3="sqlite3 -box"
@@ -77,3 +78,14 @@ function download() {
 
     python3.11 -m yt_dlp $1 -o $output_filename -S vcodec:h264,ext:mp4 -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]"
 }
+
+
+function port() {
+    if [ -z "$1" ]; then
+        echo "Error: port is required" >&2
+        return 1
+    fi
+
+    lsof -n -i :$1 | awk 'NR>1 {print $2}' | xargs -I {} ps -p {} -o pid,cmd
+}
+
