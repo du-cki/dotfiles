@@ -9,6 +9,7 @@
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "vscode-icons",
+  "editor.fontWeight": "600",
   "vim.useSystemClipboard": true,
   "python.REPL.enableREPLSmartSend": false,
   "extensions.experimental.affinity": {
@@ -32,7 +33,7 @@
     "editor.defaultFormatter": "Vue.volar"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -65,5 +66,6 @@
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
   "terminal.integrated.mouseWheelZoom": true,
-  "scm.experimental.showHistoryGraph": true
+  "scm.experimental.showHistoryGraph": true,
+  "redhat.telemetry.enabled": false
 }
