@@ -19,15 +19,17 @@ vim.opt.expandtab = true
 -- lets arrow keys wrap lines 
 vim.opt.whichwrap:append { 
     ['<'] = true,
-    ['<'] = true,
+    ['>'] = true,
     [']'] = true,
     ['['] = true
 }
 
+local DS = os.getenv("DESKTOP_SESSION")
+
 -- Due to a bug in the GNOME DE, this is really buggy. Haven't got a solution
 -- yet, so I'm enabling it on gnome desktops; It'll still be disabled elsewhere for cases
 -- like SSH. https://github.com/neovim/neovim/issues/9806
-if os.getenv("DESKTOP_SESSION") ~= "gnome" then
+if DS ~= "gnome" and DS ~= "hyprland" then
     vim.g.netrw_browse_split = 0
     vim.g.netrw_banner = 0
     vim.g.netrw_winsize = 25

@@ -7,7 +7,6 @@
   "editor.lightbulb.enabled": "off",
   "editor.fontFamily": "'Fira Code', 'monospace', monospace",
   "workbench.startupEditor": "none",
-  "workbench.sideBar.location": "right",
   "workbench.iconTheme": "vscode-icons",
   "editor.fontWeight": "600",
   "vim.useSystemClipboard": true,
@@ -21,6 +20,10 @@
   "vscord.behaviour.suppressNotifications": true,
   "window.titleBarStyle": "custom",
   "application.shellEnvironmentResolutionTimeout": 20,
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "go.inlayHints.assignVariableTypes": true,
+  "go.inlayHints.functionTypeParameters": true,
+  "go.inlayHints.parameterNames": true,
   "codeium.enableConfig": {
     "*": true,
     "prisma": true,
@@ -30,7 +33,7 @@
     "*.ts": "typescript"
   },
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -48,7 +51,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -60,12 +63,36 @@
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
-  "workbench.colorTheme": "Dark Horizon",
   "window.customTitleBarVisibility": "auto",
   "prisma.showPrismaDataPlatformNotification": false,
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
   "terminal.integrated.mouseWheelZoom": true,
   "scm.experimental.showHistoryGraph": true,
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.sideBar.location": "right",
+  "go.toolsManagement.autoUpdate": true,
+  "go.inlayHints.rangeVariableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "rust-analyzer.inlayHints.bindingModeHints.enable": true,
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "makefile.configureOnOpen": false,
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "workbench.colorTheme": "Dark Horizon",
+  "terminal.integrated.fontSize": 16,
+  "vsicons.dontShowNewVersionMessage": true,
+  "diffEditor.ignoreTrimWhitespace": false
 }

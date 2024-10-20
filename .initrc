@@ -26,6 +26,7 @@ alias ip="curl https://api.ipify.org/"
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
+
 export OS=$(grep -w ID /etc/os-release | cut -d= -f2 | tr -d '"')
 
 if [ "$OS" = "ubuntu" ]; then
@@ -39,7 +40,7 @@ fi
 
 if [ -x "$(which nvim)" ]
 then
-    # So I don't accidentally open vim, old habits.
+    # So I don't accidentally open vim, old habit.
     alias vim="nvim" 
     export VISUAL=$(which nvim);
 else

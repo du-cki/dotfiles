@@ -15,16 +15,12 @@
 
 (setq load-prefer-newer t)
 
-;; (setq projectile-globally-ignored-directories
-;;     '("target/", "node_modules/"))
-
 (use-package! discord-emacs)
 (discord-emacs-run "384815451978334208")
 
 ;; (use-package! lsp-tailwindcss
 ;;     :init
 ;;     (setq lsp-tailwindcss-add-on-mode t))
-
 
 ;; splash screen configs
 (assoc-delete-all "Jump to bookmark" +doom-dashboard-menu-sections)
@@ -40,8 +36,7 @@
                :action dired))
 
 (map! 
-  "<backtab>" #'doom/dumb-dedent
-)
+  "<backtab>" #'doom/dumb-dedent)
 
 (map! :leader
   "c c" #'recompile
